@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pratham — Instant Jewellery Price Scanning</title>
+<meta name="description" content="Pratham reads the tag on any jewellery piece and instantly calculates its exact price — accurate, fast, and error-free for jewellery showrooms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="themes/dark.css" id="themeStylesheet">
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true">
+  <span class="blob b1"></span>
+  <span class="blob b2"></span>
+  <span class="blob b3"></span>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <div class="logo"><span class="logo-dot"></span>Pratham</div>
+    <nav class="nav-links">
+      <a href="#how">How it Works</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:+918796332440" class="nav-phone">+91 87963 32440</a>
+    <a href="#contact" class="btn btn-primary nav-cta">Book a Demo</a>
+
+    <div class="theme-switch" id="themeSwitch">
+      <button class="theme-switch-btn" id="themeSwitchBtn" aria-haspopup="listbox" aria-expanded="false">
+        <span class="theme-swatch" id="themeSwatch"></span>
+        <span class="theme-switch-label" id="themeSwitchLabel">Midnight Gold</span>
+        <span class="theme-switch-caret">▾</span>
+      </button>
+      <ul class="theme-switch-menu" id="themeSwitchMenu" role="listbox">
+        <li role="option" data-theme="dark" data-label="Midnight Gold" data-swatch="linear-gradient(135deg,#f3d99a,#a6763a)">
+          <span class="theme-swatch" style="background:linear-gradient(135deg,#f3d99a,#a6763a)"></span>
+          <span>Midnight Gold <em>dark · premium</em></span>
+        </li>
+        <li role="option" data-theme="boutique" data-label="Boutique Ivory" data-swatch="linear-gradient(135deg,#d9ac78,#8a5f38)">
+          <span class="theme-swatch" style="background:linear-gradient(135deg,#d9ac78,#8a5f38)"></span>
+          <span>Boutique Ivory <em>light · elegant</em></span>
+        </li>
+        <li role="option" data-theme="tech" data-label="Tech Gradient" data-swatch="linear-gradient(135deg,#22d3ee,#8b5cf6)">
+          <span class="theme-swatch" style="background:linear-gradient(135deg,#22d3ee,#8b5cf6)"></span>
+          <span>Tech Gradient <em>bold · saas</em></span>
+        </li>
+        <li role="option" data-theme="minimal" data-label="Minimal Editorial" data-swatch="linear-gradient(135deg,#111,#0e6b4f)">
+          <span class="theme-swatch" style="background:linear-gradient(135deg,#111,#0e6b4f)"></span>
+          <span>Minimal Editorial <em>flat · swiss</em></span>
+        </li>
+      </ul>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="heroSection">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">For Jewellery Showrooms</p>
+        <h1 class="reveal" style="--d:1">Know the exact price of<br><span class="grad-text">every piece</span> — in one scan.</h1>
+        <p class="hero-sub reveal" style="--d:2">Pratham reads the tag on any jewellery item and instantly calculates its final price. No manual math, no mistakes, no waiting — just accurate answers while your customer is still standing at the counter.</p>
+        <div class="hero-actions reveal" style="--d:3">
+          <a href="#contact" class="btn btn-primary btn-lg">Book a Demo</a>
+          <a href="#how" class="btn btn-ghost btn-lg">See How it Works</a>
+        </div>
+        <div class="hero-trust reveal" style="--d:4">
+          <span class="trust-star">✦</span> Built by a jeweller with 25 years in the industry
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" style="--d:2">
+        <span class="chip chip-a">✓ 100% Accurate</span>
+        <span class="chip chip-b">⚡ Instant Price</span>
+        <div class="phone-glow"></div>
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="app-topbar">
+              <span class="app-name">Pratham</span>
+              <span class="app-rate">Gold 24K · ₹7,412/g</span>
+            </div>
+            <div class="phone-stack">
+              <div class="scan-stage">
+                <div class="scan-ring">
+                  <div class="scan-line"></div>
+                  <div class="tag-icon">🏷️</div>
+                </div>
+                <p class="scan-label">Scanning tag…</p>
+              </div>
+              <div class="result-card">
+                <p class="result-title">22K Gold Ring · 8.4g</p>
+                <div class="result-price">₹52,840</div>
+                <div class="result-rows">
+                  <div class="row"><span>Metal Value</span><span>₹49,220</span></div>
+                  <div class="row"><span>Making Charges</span><span>₹2,860</span></div>
+                  <div class="row"><span>GST (3%)</span><span>₹760</span></div>
+                </div>
+                <button class="app-btn">Show to Customer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>RFID / NFC Tag Scan</span><span>•</span>
+        <span>Instant Price Calculation</span><span>•</span>
+        <span>Live Gold Rate Sync</span><span>•</span>
+        <span>Zero Manual Errors</span><span>•</span>
+        <span>Built for the Sales Floor</span><span>•</span>
+        <span>RFID / NFC Tag Scan</span><span>•</span>
+        <span>Instant Price Calculation</span><span>•</span>
+        <span>Live Gold Rate Sync</span><span>•</span>
+        <span>Zero Manual Errors</span><span>•</span>
+        <span>Built for the Sales Floor</span><span>•</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div class="strip-inner">
+      <div class="strip-item reveal">
+        <strong data-count="99.9" data-suffix="%">0%</strong>
+        <span>Pricing accuracy</span>
+      </div>
+      <div class="strip-item reveal" style="--d:1">
+        <strong data-count="5" data-prefix="<" data-suffix="s">&lt;0s</strong>
+        <span>From tag scan to final price</span>
+      </div>
+      <div class="strip-item reveal" style="--d:2">
+        <strong>24×7</strong>
+        <span>Synced with the day's gold rate</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="section-head">
+      <p class="eyebrow reveal">How it Works</p>
+      <h2 class="reveal">Three steps. No guesswork.</h2>
+    </div>
+    <div class="how-flow">
+      <div class="how-item reveal">
+        <div class="mini-phone">
+          <div class="mini-notch"></div>
+          <div class="mini-screen step-1">
+            <div class="mini-topbar"><span>Pratham</span></div>
+            <div class="nfc-wrap">
+              <div class="nfc-pulse p1"></div>
+              <div class="nfc-pulse p2"></div>
+              <div class="nfc-pulse p3"></div>
+              <div class="nfc-core">🏷️</div>
+            </div>
+            <p class="mini-caption">Hold near tag…</p>
+          </div>
+        </div>
+        <h3><span class="step-num">01</span> Scan the tag</h3>
+        <p>Every piece carries a tag with its weight, purity, and making charges. Pratham reads it in an instant.</p>
+      </div>
+
+      <div class="flow-line">
+        <span class="flow-dot"></span>
+      </div>
+
+      <div class="how-item reveal" style="--d:1">
+        <div class="mini-phone">
+          <div class="mini-notch"></div>
+          <div class="mini-screen step-2">
+            <div class="mini-topbar"><span>Pratham</span></div>
+            <div class="data-lines">
+              <div class="data-row dr1"><span>Weight</span><span>8.4 g</span></div>
+              <div class="data-row dr2"><span>Purity</span><span>22K</span></div>
+              <div class="data-row dr3"><span>Rate</span><span>₹7,412/g</span></div>
+            </div>
+            <div class="progress-track"><div class="progress-fill"></div></div>
+            <p class="mini-caption">Calculating price…</p>
+          </div>
+        </div>
+        <h3><span class="step-num">02</span> Price is calculated</h3>
+        <p>The app applies the current day's gold rate, making charges, and GST automatically — no manual entry.</p>
+      </div>
+
+      <div class="flow-line">
+        <span class="flow-dot" style="animation-delay: 1s"></span>
+      </div>
+
+      <div class="how-item reveal" style="--d:2">
+        <div class="mini-phone">
+          <div class="mini-notch"></div>
+          <div class="mini-screen step-3">
+            <div class="mini-topbar"><span>Pratham</span></div>
+            <div class="check-badge">✓</div>
+            <div class="mini-price">₹52,840</div>
+            <p class="mini-caption">Final price ready</p>
+            <button class="mini-btn">Show to Customer</button>
+          </div>
+        </div>
+        <h3><span class="step-num">03</span> Show the customer</h3>
+        <p>The exact, final price appears on screen, ready to show — right at the counter, in front of the customer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits" id="benefits">
+    <div class="section-head">
+      <p class="eyebrow reveal">Why Showrooms Use Pratham</p>
+      <h2 class="reveal">Built for the sales floor, not the back office.</h2>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card reveal">
+        <div class="benefit-icon">✓</div>
+        <h3>Accuracy</h3>
+        <p>Prices are calculated the same way, every time — no room for manual error.</p>
+      </div>
+      <div class="benefit-card reveal" style="--d:1">
+        <div class="benefit-icon">⚡</div>
+        <h3>Speed</h3>
+        <p>What used to take a few minutes of calculation now takes seconds.</p>
+      </div>
+      <div class="benefit-card reveal" style="--d:2">
+        <div class="benefit-icon">🤝</div>
+        <h3>Customer Trust</h3>
+        <p>A confident, instant answer builds more trust than a delayed one.</p>
+      </div>
+      <div class="benefit-card reveal" style="--d:3">
+        <div class="benefit-icon">📈</div>
+        <h3>Live Gold Rates</h3>
+        <p>Prices always reflect the current day's rate — never outdated.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-badge reveal">AG</div>
+      <div class="about-copy reveal" style="--d:1">
+        <p class="eyebrow">About the Founder</p>
+        <h2>Built by someone who has stood at the counter.</h2>
+        <p>Pratham was created by Amit Gupta, who has spent 25 years inside the jewellery industry. Pratham exists to solve a problem seen firsthand, every day, at the showroom counter.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="cta-inner reveal">
+      <h2>Ready to bring accuracy to your showroom?</h2>
+      <p>See Pratham in action with a short, no-obligation demo.</p>
+      <div class="cta-actions">
+        <a href="mailto:info@amitaash.com" class="btn btn-primary btn-lg">✉ info@amitaash.com</a>
+        <a href="tel:+918796332440" class="btn btn-ghost btn-lg">📞 +91 87963 32440</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo logo-light"><span class="logo-dot"></span>Pratham</div>
+      <p>An Amitaash IT Solutions Private Limited product.</p>
+    </div>
+    <div class="footer-contact">
+      <p><strong>Amitaash IT Solutions Private Limited</strong></p>
+      <p>Plot No. 2, Right Portion, WZ-3, Moti Nagar,<br>Delhi Industrial Area, New Delhi, West Delhi – 110015</p>
+      <p><a href="mailto:info@amitaash.com">info@amitaash.com</a> · <a href="tel:+918796332440">+91 87963 32440</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Amitaash IT Solutions Pvt. Ltd. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
