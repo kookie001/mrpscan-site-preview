@@ -174,6 +174,8 @@ main, .nav, .footer { position: relative; z-index: 2; }
   font-size: 1.4rem; font-weight: 700; letter-spacing: 0.01em;
   display: flex; align-items: center; gap: 0.5rem;
 }
+.logo svg { height: 34px; width: auto; display: block; transform: rotate(-6deg); filter: drop-shadow(0 6px 10px rgba(0,0,0,0.4)); }
+.footer-logo svg { height: 28px; }
 .logo-dot {
   width: 9px; height: 9px; border-radius: 50%;
   background: var(--gold);

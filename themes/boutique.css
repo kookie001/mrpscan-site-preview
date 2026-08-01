@@ -4,12 +4,12 @@
   --panel: #ffffff;
   --panel-hover: #fffdf9;
   --border: #e9ddc4;
-  --text: #2a241a;
+  --text: #15120d;
   --text-dim: #857a63;
-  --gold: #b9895a;
-  --gold-light: #d9ac78;
-  --gold-deep: #8a5f38;
-  --glow: rgba(185, 137, 90, 0.22);
+  --gold: #d9291f;
+  --gold-light: #e85a4f;
+  --gold-deep: #a81f17;
+  --glow: rgba(217, 41, 31, 0.2);
   --radius: 20px;
   font-size: 16px;
 }
@@ -43,12 +43,18 @@ main, .nav, .footer { position: relative; z-index: 2; }
 .reveal.in-view { opacity: 1; transform: translateY(0); }
 
 .eyebrow {
+  display: inline-flex;
+  align-items: center;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.72rem;
-  font-weight: 600;
+  letter-spacing: 0.13em;
+  font-size: 0.85rem;
+  font-weight: 700;
   color: var(--gold-deep);
-  margin-bottom: 0.9rem;
+  background: rgba(217, 41, 31, 0.09);
+  border: 1px solid rgba(217, 41, 31, 0.28);
+  padding: 0.48rem 1.15rem;
+  border-radius: 999px;
+  margin-bottom: 1.1rem;
 }
 
 .grad-text {
@@ -87,6 +93,8 @@ main, .nav, .footer { position: relative; z-index: 2; }
 .nav.scrolled { border-bottom: 1px solid var(--border); box-shadow: 0 4px 20px -12px rgba(42,36,26,0.15); }
 .nav-inner { max-width: 1200px; margin: 0 auto; padding: 1.15rem 1.5rem; display: flex; align-items: center; gap: 2rem; }
 .logo { font-size: 1.45rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; }
+.logo svg { height: 34px; width: auto; display: block; transform: rotate(-6deg); filter: drop-shadow(0 6px 10px rgba(0,0,0,0.28)); }
+.footer-logo svg { height: 28px; }
 .logo-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); }
 .nav-links { display: flex; gap: 1.9rem; margin-right: auto; margin-left: 1rem; }
 .nav-links a { font-size: 0.92rem; font-weight: 500; color: var(--text-dim); transition: color 0.2s; }
@@ -199,8 +207,8 @@ main, .nav, .footer { position: relative; z-index: 2; }
 .strip-item strong { display: block; font-size: 2.2rem; color: var(--gold-deep); font-weight: 700; }
 .strip-item span { font-size: 0.85rem; color: var(--text-dim); }
 
-.section-head { max-width: 620px; margin: 0 auto 3rem; text-align: center; }
-.section-head h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 700; }
+.section-head { max-width: 780px; margin: 0 auto 3rem; text-align: center; }
+.section-head h2 { font-size: clamp(1.4rem, 2.6vw, 2.1rem); font-weight: 700; white-space: nowrap; }
 
 /* How it Works */
 .how { padding: 6rem 1.5rem; max-width: 1220px; margin: 0 auto; }
@@ -300,4 +308,5 @@ main, .nav, .footer { position: relative; z-index: 2; }
 @media (max-width: 520px) {
   .benefits-grid { grid-template-columns: 1fr; }
   .cta-actions { flex-direction: column; }
+  .section-head h2 { font-size: clamp(1.05rem, 5.5vw, 1.4rem); }
 }

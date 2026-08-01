@@ -76,6 +76,8 @@ main, .nav, .footer { position: relative; z-index: 2; }
 .nav.scrolled { background: rgba(10, 11, 24, 0.75); backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); }
 .nav-inner { max-width: 1200px; margin: 0 auto; padding: 1.1rem 1.5rem; display: flex; align-items: center; gap: 2rem; }
 .logo { font-size: 1.45rem; font-weight: 700; display: flex; align-items: center; gap: 0.55rem; }
+.logo svg { height: 34px; width: auto; display: block; transform: rotate(-6deg); filter: drop-shadow(0 6px 10px rgba(0,0,0,0.4)); }
+.footer-logo svg { height: 28px; }
 .logo-dot { width: 9px; height: 9px; border-radius: 50%; background: linear-gradient(135deg, var(--cyan), var(--violet)); box-shadow: 0 0 14px 2px var(--glow); }
 .nav-links { display: flex; gap: 1.9rem; margin-right: auto; margin-left: 1rem; }
 .nav-links a { font-size: 0.92rem; font-weight: 500; color: var(--text-dim); transition: color 0.2s; }
