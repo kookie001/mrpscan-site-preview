@@ -273,6 +273,24 @@ main, .nav, .footer { position: relative; z-index: 2; }
 .cta p { color: var(--text-dim); margin-bottom: 1.9rem; }
 .cta-actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
 
+/* Pricing */
+.pricing-hero { max-width: 1200px; margin: 0 auto; padding: 6.5rem 1.5rem 7rem; }
+.pricing-hero h1 { font-size: clamp(2rem, 3.6vw, 2.8rem); font-weight: 700; margin-bottom: 0.8rem; }
+.pricing-sub { color: var(--text-dim); font-size: 1.05rem; max-width: 48ch; margin: 0 auto; }
+.pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 780px; margin: 3.5rem auto 0; }
+.pricing-card {
+  background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 2.6rem 2rem; text-align: center;
+  box-shadow: 0 20px 44px -26px rgba(42,36,26,0.22);
+  display: flex; flex-direction: column;
+}
+.pricing-tag { text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.72rem; font-weight: 700; color: var(--gold-deep); margin-bottom: 0.6rem; }
+.pricing-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.3rem; }
+.pricing-amount { font-family: 'Playfair Display', serif; font-size: 2.6rem; font-weight: 700; color: var(--gold-deep); line-height: 1; }
+.pricing-amount-custom { font-size: 2rem; }
+.pricing-note { color: var(--text-dim); font-size: 0.85rem; margin: 0.5rem 0 1.8rem; }
+.pricing-btn { width: 100%; margin-top: auto; }
+
 /* Footer */
 .footer { border-top: 1px solid var(--border); padding: 3rem 1.5rem 1.5rem; background: var(--bg-alt); }
 .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
@@ -304,6 +322,9 @@ main, .nav, .footer { position: relative; z-index: 2; }
   .theme-switch-btn { padding: 0.5rem; }
   .chip { display: none; }
   .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--border); padding: 1.2rem 1.5rem; gap: 1rem; }
+}
+@media (max-width: 700px) {
+  .pricing-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 520px) {
   .benefits-grid { grid-template-columns: 1fr; }
